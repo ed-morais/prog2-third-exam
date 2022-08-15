@@ -4,5 +4,5 @@ class Element {
   String latin;
   int atomicWeight;
 
-  Element(this.symbol, this.name, this.latin, this.atomicWeight);
+  Element(this.atomicWeight, this.symbol, this.name, this.latin);
 }
