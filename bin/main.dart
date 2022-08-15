@@ -16,8 +16,8 @@
  * adaptarem ao seu projeto
  */
 import 'dart:io';
-import 'package:chemical/elements.dart';
-import 'package:chemical/molecule.dart';
+import 'package:prog2-third-exam/bin/elements.dart';
+import 'package:prog2-third-exam/molecule.dart';
 
 /*
  * Exibe texto tabulado no console
