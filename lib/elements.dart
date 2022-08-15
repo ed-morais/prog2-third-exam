@@ -1,6 +1,8 @@
 class Element {
-  String symbol = "E1001";
-  String portugueseName = "ELEMENTO INEXISTENTE";
-  String latinName = "ELEMENTO INEXISTENTE";
-  int atomicWeight = 0;
+  String symbol;
+  String portugueseName;
+  String latinName;
+  int atomicWeight;
+
+  Element(this.symbol, this.portugueseName, this.latinName, this.atomicWeight);
 }
