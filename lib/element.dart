@@ -4,5 +4,5 @@ class Element {
   String latinName;
   int weight;
 
-  Element(this.weight, this.symbol, this.name, this.latinName);
+  Element({required this.weight, required this.symbol, required this.name, required this.latinName});
 }

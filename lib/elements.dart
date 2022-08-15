@@ -10,28 +10,14 @@ class Elements extends Iterable {
     for (var c = 1; c < file.length; c++) {
       final data = file[c].split(',');
       final elem = Element(
-        int.parse(data[0]),
-        data[1],
-        data[2],
-        data[3],
+        weight: int.parse(data[0]),
+        symbol: data[1],
+        name: data[2],
+        latinName: data[3],
       );
       _elements.add(elem);
     }
   }
-
-  // List<Element> get elements {
-  //    for (var c = 1; c < _elements.length; c++) {
-  //     final data = _elements[c].split(',');
-  //     final elem = Element(
-  //       int.parse(data[0]),
-  //       data[1],
-  //       data[2],
-  //       data[3],
-  //     );
-  //     iterable.add(elem);
-  //   }
-  //   return iterable;
-  // }
 
   @override
   Iterator<Element> get iterator => _elements.iterator;
@@ -65,7 +51,7 @@ void main() {
   elements.forEach(
     (elem) {
       // ! no começo da string 'text' é necessário usar apenas 'elem' ao invés de 'elem.symbol'
-      final text = '${elem.symbol}\t${elem.name}\t${elem.latinName}\t${elem.weight}';
+      final text = '$elem\t${elem.name}\t${elem.latinName}\t${elem.weight}';
       printTabbed(text, tabs);
     },
   );
