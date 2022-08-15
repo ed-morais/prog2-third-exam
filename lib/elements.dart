@@ -50,7 +50,6 @@ void main() {
   printTabbed('SYMBOL\tNAME\tLATIN\tWEIGHT', tabs);
   elements.forEach(
     (elem) {
-      // ! no começo da string 'text' é necessário usar apenas 'elem' ao invés de 'elem.symbol'
       final text = '$elem\t${elem.name}\t${elem.latinName}\t${elem.weight}';
       printTabbed(text, tabs);
     },

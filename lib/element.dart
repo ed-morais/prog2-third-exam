@@ -5,4 +5,7 @@ class Element {
   int weight;
 
   Element({required this.weight, required this.symbol, required this.name, required this.latinName});
+
+  @override
+  String toString() => symbol;
 }
