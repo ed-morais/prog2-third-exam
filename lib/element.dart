@@ -1,8 +1,8 @@
 class Element {
   String symbol;
-  String portugueseName;
-  String latinName;
+  String name;
+  String latin;
   int atomicWeight;
 
-  Element(this.symbol, this.portugueseName, this.latinName, this.atomicWeight);
+  Element(this.symbol, this.name, this.latin, this.atomicWeight);
 }
