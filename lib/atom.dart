@@ -8,7 +8,7 @@ class Atom {
     for (var element in elements) {
       if (symbol.toUpperCase() == element.toString().toUpperCase()) return;
     }
-    throw ArgumentError('This symbol is not valid!');
+    throw ArgumentError('This symbol is invalid!');
   }
 
   @override
