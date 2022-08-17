@@ -1,7 +1,9 @@
 import 'package:prog2_third_exam/elements.dart';
+import 'package:prog2_third_exam/element.dart';
 
-class Molecule implements Comparable {
+class Molecule implements Comparable<Molecule> {
   late String _formula;
+  late Map<Element, int> _elements;
   String name;
   Elements elements = Elements();
 
@@ -25,14 +27,8 @@ class Molecule implements Comparable {
     for (var formula in splitFormula) {
       new RegExp(r'[A-z]{1,2}').allMatches(formula).forEach((match) {
         print(match.group(0));
-        // elements.forEach((element) {
-        //   if (element.symbol == formula[0]) {
-        //     weight += int.parse(element.weight);
-        //   }
-        // });
       });
     }
-
     return weight;
   }
 
@@ -48,19 +44,6 @@ class Molecule implements Comparable {
 
   @override
   int compareTo(other) {
-    // TODO: implement compareTo
     throw UnimplementedError();
   }
-  // regex: [A-Z][a-z]?\d*
-}
-
-void main() {
-  var molecule = Molecule(formula: 'C2H6O', name: 'Ethane');
-  print(molecule.weight);
-  var molecule2 = Molecule(formula: 'G2H5', name: 'Ethane');
-  print(molecule2.weight);
-  var molecule3 = Molecule(formula: 'C2H3O2NH4', name: 'Ethane');
-  print(molecule3.weight);
-  var molecule4 = Molecule(formula: 'Na2Cl3', name: 'Ethane');
-  print(molecule4.weight);
 }

@@ -1,2 +1,2 @@
-# chemical
-Third exam for the programming 2 course.
+Terceira Avaliação Programação 2
+Alunos: Edilson Morais Brito, José Fhilipe Martins Coelho.
